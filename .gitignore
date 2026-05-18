@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local AI helper files
+prompts/
+design-rules.md
+bootcamp.md
