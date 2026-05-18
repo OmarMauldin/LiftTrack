@@ -1,21 +1,26 @@
-import { Button } from "@/components/ui/button"
+import { Routes, Route } from "react-router-dom"
+import Dashboard from "./pages/Dashboard"
+import Workouts from "./pages/Workouts"
+import Exercises from "./pages/Exercises"
+import Progress from "./pages/Progress"
+import Programs from "./pages/Programs"
 
-export function App() {
+export default function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="flex min-h-screen bg-background text-foreground">
+      {/* Sidebar placeholder — replaced Day 3 */}
+      <div className="w-56 bg-card border-r border-border" />
+      <main className="flex-1 p-6">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/workouts" element={<Workouts />} />
+          <Route path="/exercises" element={<Exercises />} />
+          <Route path="/progress" element={<Progress />} />
+          <Route path="/programs" element={<Programs />} />
+        </Routes>
+      </main>
     </div>
   )
 }
 
-export default App
+
