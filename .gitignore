@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Local AI helper files
-prompts/
-design-rules.md
-bootcamp.md
+# Local planning notes
+.local/
+notes/
