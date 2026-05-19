@@ -20,4 +20,4 @@ Currently in active development.
 - shadcn/ui
 - React Router 7
 - Supabase — auth and PostgreSQL database
-- Inter Variable font
+- Inter Variable font 

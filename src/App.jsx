@@ -4,12 +4,12 @@ import Workouts from "./pages/Workouts"
 import Exercises from "./pages/Exercises"
 import Progress from "./pages/Progress"
 import Programs from "./pages/Programs"
+import Sidebar from "./components/layout/Sidebar.jsx"
 
 export default function App() {
   return (
     <div className="flex min-h-screen bg-background text-foreground">
-      {/* Sidebar placeholder — replaced Day 3 */}
-      <div className="w-56 bg-card border-r border-border" />
+      <Sidebar />
       <main className="flex-1 p-6">
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -19,7 +19,8 @@ export default function App() {
           <Route path="/programs" element={<Programs />} />
         </Routes>
       </main>
-    </div>
+      </div>
+    
   )
 }
 

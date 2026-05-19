@@ -1,3 +1,5 @@
+document.body.classList.add('dark')
+
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import "@fontsource-variable/inter"
@@ -9,7 +11,7 @@ import { BrowserRouter } from "react-router"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ThemeProvider>
+    <ThemeProvider defaultTheme="dark">
       <BrowserRouter>
       <App />
       </BrowserRouter>
